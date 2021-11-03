@@ -12,9 +12,66 @@ body {
 }
 
 header {
-    background-color: rgba(0, 255, 0, 0.3);
+    display: grid;
+    grid-template-columns: 300px 1fr 200px;
+    padding:0rem 1rem;
+    background-color: #202020;
     width: 100vw;
+    height: 3.5rem;
 }
+
+header .logo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: left;
+}
+
+header .search {
+    display: grid;
+    grid-template-columns:500px 4rem 2.4rem;
+    grid-gap: none;
+    align-items: center;
+    justify-items: left;
+    width: 100%;
+}
+
+header .search input[type=text] {
+    padding: .7rem;
+    background-color: #121212;
+    border: none;
+    width: 500px;
+}
+
+header .search button {
+    width: 4rem;
+    height: 2.4rem;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background-color: #313131;
+  }
+
+  header .search #mic{
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50px;
+      margin-left: 1rem;
+      background-color: #121212;
+  }
+
+  header .profile {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: right;
+
+  }
+
+  header .profile img{
+      border-radius: 50px;
+  }
 
 main {
     display: grid;
