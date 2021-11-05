@@ -157,24 +157,81 @@ main .sidebar span {
     align-content: start;
     justify-content: center;
     grid-gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .video {
     display: grid;
-    grid-template-rows: 180px auto;
+    grid-template-rows: 200px auto;
     color: #f2f2f2;
     text-decoration: unset;
     color: unset;
 }
 
-.video .thumbnail {
+.video-1 .thumbnail {
     background-image: url(https://i.ytimg.com/vi/YqJbt4wQvfY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdXiF4SsFP1t1mREUOxWLvIRSOxA);
     background-size: cover;
     background-position: center;
 }
 
+.video-1:hover .thumbnail {
+    background-image: url(https://i.ytimg.com/an_webp/YqJbt4wQvfY/mqdefault_6s.webp?du=3000&sqp=CKj2k4wG&rs=AOn4CLABxNwLRywOvYqh8opGiMBkAXzECg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-2 .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/-A3rQpKLCMU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhNQbFXV2kKEvOt-Te2CzvQ4cjaw);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-2:hover .thumbnail {
+    background-image: url(https://i.ytimg.com/an_webp/-A3rQpKLCMU/mqdefault_6s.webp?du=3000&sqp=COqPlIwG&rs=AOn4CLCqu4v8rEAbpLaVWogdhQ64p0_nMw);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-3 .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/93iL5cR2SEQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUlJo6eJIjD8-M6i7pfADdp_SGMA);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-4 .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/ikMLT729ArM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCfFCG404E6sADFNCg-NRMUYMPMmg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-5 .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/w0wjZH7A8bE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxXJrAJy9nU7xkmCBEbACXITXmBg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-5:hover .thumbnail {
+    background-image: url(https://i.ytimg.com/an_webp/w0wjZH7A8bE/mqdefault_6s.webp?du=3000&sqp=CMaglIwG&rs=AOn4CLAOg_AOF0TTC0KaimhdE4UmGQDfCA);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-6 .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/JSKLnOyaP7A/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAPaGdq1_gl1jyb3ITfZuhZd0kbBA);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-6:hover .thumbnail {
+    background-image: url(https://i.ytimg.com/an_webp/JSKLnOyaP7A/mqdefault_6s.webp?du=3000&sqp=CMCnlIwG&rs=AOn4CLAeyKIT806d8n_Zbu5ukRdmEj-AuA);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 .video .info {
+    margin-top: .3rem;
     display: grid;
     grid-template-columns: 60px 1fr;
 }
