@@ -13,6 +13,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr;
     background-color: rgba(255, 0, 0, 0.3);
+    overflow-x: hidden;
 }
 
 header {
@@ -107,12 +108,40 @@ main .sidebar span {
 .center {
     display: grid;
     grid-template-rows: auto 1fr;
+    background-color: #202020;
+
 }
 
 .topbar {
-    background-color: rgba(255, 0, 255, 0.3);
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: .5rem;
+    padding: 1rem 0rem;
+    background-color: #202020;
+    border-bottom: 1px solid #303030;
+    border-top: 1px solid #303030;
+    
+}
+
+.topbar button {
+    padding: 0.3rem;
+    border-radius: 25px;
+    border: solid 1px #303030;
+    background-color: #373737;
+    color: #f2f2f2;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.topbar button:hover {
+    background-color: #404040;
+}
+
+.topbar button:active {
+    background-color: #f2f2f2;
+    color: #202020;
 }
 
 .videos {
-    background-color: rgba(0, 255, 255, 0.3);
+    background-color: #202020;
 }
