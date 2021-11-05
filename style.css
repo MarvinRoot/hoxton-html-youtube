@@ -12,7 +12,7 @@
 body {
     display: grid;
     grid-template-rows: auto 1fr;
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: #202020;
     overflow-x: hidden;
 }
 
@@ -20,9 +20,13 @@ header {
     display: grid;
     grid-template-columns: 300px 1fr 200px;
     padding:0rem 1.6rem;
-    background-color: #202020;
+    background-color: #202020ea;
     width: 100vw;
     height: 3.5rem;
+    position: sticky;
+    top: 0%;
+
+    backdrop-filter: blur(3px);
 }
 
 header .logo {
@@ -91,7 +95,9 @@ main .sidebar {
     grid-gap: 2rem;
     background-color: #202020;
     align-content: start;
-    height: 100vh;
+    height: calc(100vh - 3.5rem);
+    position: sticky;
+    top: 3.5rem;
 }
 
 main .sidebar div {
@@ -117,10 +123,13 @@ main .sidebar span {
     grid-auto-flow: column;
     grid-gap: .5rem;
     padding: 1rem 0rem;
-    background-color: #202020;
+    background-color: #202020ea;
     border-bottom: 1px solid #303030;
     border-top: 1px solid #303030;
-    
+    position: sticky;
+    top: 3.5rem;
+
+    backdrop-filter: blur(3px);
 }
 
 .topbar button {
@@ -144,4 +153,5 @@ main .sidebar span {
 
 .videos {
     background-color: #202020;
+    color: white;
 }
