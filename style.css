@@ -115,7 +115,6 @@ main .sidebar span {
     display: grid;
     grid-template-rows: auto 1fr;
     background-color: #202020;
-
 }
 
 .topbar {
@@ -128,12 +127,13 @@ main .sidebar span {
     border-top: 1px solid #303030;
     position: sticky;
     top: 3.5rem;
+    justify-content: left;
 
     backdrop-filter: blur(3px);
 }
 
 .topbar button {
-    padding: 0.3rem;
+    padding: 0.5rem;
     border-radius: 25px;
     border: solid 1px #303030;
     background-color: #373737;
@@ -152,6 +152,64 @@ main .sidebar span {
 }
 
 .videos {
-    background-color: #202020;
-    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-content: start;
+    justify-content: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.video {
+    display: grid;
+    grid-template-rows: 180px auto;
+    color: #f2f2f2;
+    text-decoration: unset;
+    color: unset;
+}
+
+.video .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/YqJbt4wQvfY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdXiF4SsFP1t1mREUOxWLvIRSOxA);
+    background-size: cover;
+    background-position: center;
+}
+
+.video .info {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+.video .more-info {
+    display: grid;
+    grid-gap: .3rem;
+}
+
+.video .profile-pic {
+    padding: 0.5rem;
+}
+
+.video .profile-pic img {
+    border-radius: 50px;
+    width: 50px;
+}
+
+.video .more-info {
+    padding: .5rem;
+}
+
+.video .more-info .title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.video .more-info .channel-name {
+    font-size: .8rem;
+    color: #a9a9a9;
+}
+
+.video .more-info .views {
+    font-size: .8rem;
+    color: #a9a9a9;
+    font-weight: 500;
 }
